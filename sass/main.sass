@@ -1,0 +1,221 @@
+html
+	font-size: 100%
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+*:before, *:after
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	font-weight: 400
+	overflow-x: hidden
+	margin: 0
+	font-family: 'Montserrat', sans-serif
+p
+	margin: 0
+
+a
+	text-decoration: none
+	outline: none
+	display: inline-block
+	color: #fff
+
+img
+	max-width: 100%
+	height: auto
+	vertical-align: bottom
+
+ul li,
+ol li
+	list-style: none
+	display: block
+	margin: 0
+
+span,strong
+	display: inline-block
+
+ul, ol
+	display: block
+	margin: 0
+	padding-left: 0
+
+button
+	outline: none
+	border: 0
+	padding: 0
+	cursor: pointer
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	font-weight: normal
+
+.hidden
+	display: none
+.site-wrap
+	overflow: hidden
+.container
+	margin: 0 auto
+	position: relative
+	padding: 0 15px
+	width: 100%
+	max-width: 1430px
+
+.nested-accordion 
+	margin-top: 0.5em 
+	cursor: pointer 
+	h6
+		position: relative
+		padding: 8px 10px 8px 33px
+		color: #47a3da 
+		font-size: 19px
+		user-select: none
+		line-height: normal
+		border: 1px solid #ececec
+		border-top-left-radius: 5px
+		border-top-right-radius: 5px
+		&:before 
+			content: "+" 
+			color: #becbd2 
+			font-size: 28px
+			font-weight: 500 
+			font-family: "Lucida Console", Monaco, monospace 
+			position: absolute 
+			left: 10px
+			top: 50%
+			transform: translateY(-51%)
+		&.selected 
+			background: #47a3da 
+			color: #fff 
+			&:before 
+				content: "-" 
+	.open-accordeon 
+		padding: 8px
+		color: #768e9d 
+		border: 1px solid #ececec
+		border-top: none
+		&:last-child
+			cursor: default
+
+.inner-tables
+	&__line
+		display: flex
+		justify-content: space-between
+		padding-top: 10px
+		padding-right: 10px
+		border-bottom: 1px solid #ececec
+	&__link
+		color: #196da8
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		width: 340px
+	&__right
+		max-width: 280px
+		width: 100%
+		display: flex
+		justify-content: space-between
+	&__info
+		background-color: #f8f8f8
+		max-width: 350px
+		width: 100%
+		text-align: right
+		margin-left: auto
+		border-radius: 5px
+		padding: 10px
+		margin-top: 10px
+
+.tables-header
+	display: flex
+	align-items: center
+	justify-content: space-between
+	color: #47a3da 
+	padding: 8px 0 8px 0
+	font-size: 19px
+	border-bottom: 1px solid #ececec
+	cursor: default
+
+.main-tables
+	display: flex
+	align-items: center
+	justify-content: space-between
+	&__discountedTotal
+		text-align: left
+	&__customerId
+		text-align: right
+	&__customerId2
+		text-align: left
+	&__discountedTotal2
+		text-align: right
+	&__shopCaption
+		padding-right: 15px
+	&__distinctItems
+
+.inner-tables
+	&__header
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 10px
+		border-bottom: 1px solid #ececec
+		&--right
+			display: flex
+			justify-content: space-between
+			max-width: 300px
+			width: 100%
+	&__list
+		max-height: 234px
+		overflow-y: auto
+		&::-webkit-scrollbar 
+			width: 10px
+		&::-webkit-scrollbar-track
+			background-color: #f9f9fd
+			border-radius: 5px
+		&::-webkit-scrollbar-thumb
+			border-radius: 5px
+			background: linear-gradient(180deg, #47a3da, #47a3da)
+
+
+.K-vo_tovarov
+	white-space: nowrap
+	
+.tables-header
+	display: grid
+	grid-template-columns: 130px 150px 210px 130px
+	white-space: nowrap
+	div
+		text-align: center
+
+.table-row
+	display: grid
+	grid-template-columns: repeat(4, 11%)
+	div
+		text-align: center
+
+.main-tables
+	display: grid
+	grid-template-columns: 130px 200px 293px 130px
+	text-align: center
